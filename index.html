@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                bootStrap                                -->
+    <!-- ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="Style/bootstrap.min.css" />
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               fontAwesome                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="Style/all.min.css" />
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 myStyle                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="Style/myStyle.css" />
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 webIcon                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <link rel="shortcut icon" href="Images/webIcon.png" type="image/x-icon" />
+
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <header class="container py-5">
+      <h1 class="text-secondary">Bookmark</h1>
+    </header>
+    <section class="container border-top border-bottom p-3 mb-3">
+      <div class="bg-secondary p-5 mx-auto">
+        <div class="w-75 mx-auto text-center mb-3">
+          <p class="text-center mb-3 fw-normal fs-4">
+            Bookmark your favorite sites
+          </p>
+
+          <div class="form-floating mb-3 mx-auto">
+            <input
+              type="text"
+              class="form-control shadow-none"
+              id="siteName"
+              placeholder="Site Name"
+            />
+            <label for="floatingInput">Site Name</label>
+          </div>
+          <div class="form-floating mx-auto">
+            <input
+              type="url"
+              class="form-control shadow-none"
+              id="siteLink"
+              placeholder="Site Link"
+            />
+            <label for="floatingInput">Site Link</label>
+            <div id="error-link" class="text-start fw-bold fs-5"></div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            class="btn btn-primary"
+            id="submitBtn"
+            onclick="addWebsiteLists()"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row" id="siteData">
+        <!-- <div class="col-md-4 mb-3 text-center">
+          <div class="bg-secondary py-3">
+            <p class="text-white fw-bold fs-5">Website Name</p>
+            <div>
+              <a
+                href=""
+                class="btn btn-primary text-white text-decoration-none px-3"
+                id="visitBtn"
+                >Visit</a
+              >
+
+              <button class="btn btn-danger px-3 shadow-none" id="deleteBtn">
+                Delete
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <footer class="container">
+      <p class="text-secondary fw-bold fs-6 py-3">© 2019 Bookmarker Inc.</p>
+    </footer>
+    <script src="Javascript/bootstrap.bundle.min.js"></script>
+    <script src="Javascript/myScript.js"></script>
+  </body>
+</html>
